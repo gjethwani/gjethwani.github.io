@@ -1,0 +1,204 @@
+p, h1, h3, label {
+  font-family: 'Raleway', "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+}
+
+.container {
+  width: 70%;
+  height: 70%;
+  background-color: rgba(88,24,69,0.5);
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#nav-bar {
+  width: 85%;
+  margin-left: 7.5%;
+  display: inline-block;
+  margin-top: 2.5%;
+  height: 7.5%;
+}
+
+.nav-item {
+  width: 20%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  border-left: 2px solid #FF5733;
+  border-top: 2px solid #FF5733;
+  border-bottom: 2px solid #FF5733;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: #FF5733;
+}
+
+.nav-left-border {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.nav-right-border {
+  border-right: 2px solid #FF5733;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.selected-nav-item {
+  background-color: #FF5733;
+}
+
+.nav-text {
+  vertical-align: middle;
+  margin-bottom: 0px;
+}
+
+.info-container {
+  height: 80%;
+  text-align: center;
+  display: block;
+  width: 85%;
+  margin: auto;
+}
+
+.info-elements {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+#home-info {
+  width: 30%;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+#profile-pic {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#name {
+  display: block;
+}
+
+.social-media {
+  margin-top: 15px;
+  margin-left: 5px;
+  width: 6%;
+}
+
+.social-media:hover {
+  opacity: 0.7;
+}
+
+#contact-info {
+  margin-top: 10px;
+}
+
+#contact-info label {
+  float: left;
+}
+
+#social-media-container {
+  display: inline-block;
+}
+
+#contact-container {
+  text-align: left;
+}
+
+#contact-form {
+  vertical-align: middle;
+  padding: 0px;
+}
+
+.contact-label {
+  margin-bottom: 0px;
+}
+
+#contact-form input {
+  width: 100%;
+}
+
+#contact-form p {
+  text-align: left;
+}
+
+.required {
+  color: red;
+}
+
+#contact-button {
+  float: right;
+  background-color: #FF5733;
+  border-radius: 5px;
+  border: 0px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.errors {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  color: red;
+  visibility: hidden;
+}
+
+.loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: right;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.sent {
+  float: right;
+  display: none;
+}
+
+@media only screen and (max-width: 425px) { /* Will target mobile devices in landscape mode and up */
+  #home-info {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 480px) { /* Will target mobile devices in landscape mode and up */
+  #home-info {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) { /* Targets tablets in portrait mode and up */
+  #home-info {
+    width: 40%;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-widdth: 600px) and (max-width: 768px) { /* Targets tablets in landscape mode and up */
+  #home-info {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) { /* Targets the desktop view */
+  #home-info {
+    width: 22%;
+  }
+}

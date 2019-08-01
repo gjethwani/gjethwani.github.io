@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Gautam Jethwani</title>
+    <!-- bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.1.1-dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://smtpjs.com/v2/smtp.js"></script>
+    <script src="bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/background.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+
+  <body>
+    <div id='nav-bar'>
+      <div id='home' class='nav-item nav-left-border selected-nav-item' onclick='return changeNavSelection("home");'>
+        <p class='nav-text'>Home</p>
+      </div>
+      <div id='about' class='nav-item' onclick='return changeNavSelection("about");'>
+        <p class='nav-text'>About</p>
+      </div>
+      <div id='work' class='nav-item' onclick='return changeNavSelection("work");'>
+        <p class='nav-text'>Work</p>
+      </div>
+      <div id='projects' class='nav-item' onclick='return changeNavSelection("projects");'>
+        <p class='nav-text'>Projects</p>
+      </div>
+      <div id='contact' class='nav-item nav-right-border' onclick='return changeNavSelection("contact");'>
+        <p class='nav-text'>Contact</p>
+      </div>
+    </div>
+    <div id='home-info'>
+      <img id='profile-pic' src='profile-pic.gif' alt='Gautam Jethwani'>
+      <h1 id='name' class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>Gautam Jethwani</h1>
+      <p id='description' class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>Software Developer</p>
+    </div>
+    <div id='about-info' style='display: none'>
+    </div>
+    <div id='work-info' style='display: none'>
+    </div>
+    <div id='projects-info' style='display: none'>
+    </div>
+    <div id='contact-info' class='info-container' style='display: none' >
+      <!-- <div id='contact-container' class='info-elements'> -->
+        <h3>Shoot me a message:</h3>
+        <form class='form' id='contact-form' autocomplete='off'>
+          <label for='name' class='contact-label'>Name<span class='required'>*</span></label>
+          <input type='text' placeholder='John Doe' name='name' id='name-field'>
+          <p id='name-errors' class='errors'>hidden</p>
+
+          <label for='email' class='contact-label'>Email<span class='required'>*</span></label>
+          <input type='email' placeholder='john@doe.com' name='email' id='email-field'>
+          <p id='email-errors' class='errors'>hidden</p>
+
+          <label for='number' class='contact-label'>Phone Number</label>
+          <input type='tel' placeholder='+1 (234) 345-6789' name='number' id='number-field'>
+          <p id='number-errors' class='errors'>hidden</p>
+
+          <label for='message' class='contact-label'>Message<span class='required'>*</span></label>
+          <input type='textarea' placeholder='Hi!' name='message' id='message-field'>
+          <p id='message-errors' class='errors'>hidden</p>
+
+          <input type='button' id='contact-button' style='width: 10%;' onclick='return sendContactForm();' value='Send'>
+          <div class='loader' id='loader' style='display: none;'></div>
+          <p class='sent' id='sent'>Sent!</p>
+          <p class='errors' id='somethingWentWrong'>Something went wrong, please try again!</p>
+        </form>
+        <div id='social-media-container'>
+          <a href='mailto:gdjethwa@usc.edu' target='_blank'><img class='social-media' src='mail.png' style='margin-left: 0px;'></a>
+          <a href='https://www.facebook.com/gjethwani' target='_blank'><img class='social-media' src='facebook.png'></a>
+          <a href='https://github.com/gjethwani/' target='_blank'><img class='social-media' src='github.png'></a>
+          <a href='https://www.linkedin.com/in/gautamjethwani/' target='_blank'><img class='social-media' src='linkedin.png'></a>
+          <a href='https://www.instagram.com/gjethwani/' target='_blank'><img class='social-media' src='instagram.png'></a>
+        </div>
+      </div>
+    <canvas id="stars" width="300" height="300"></canvas> <!-- Background from https://codepen.io/cr0ybot/pen/zNyYeW -->
+  </body>
+  <script src="js/index.js"></script>
+  <script src="js/background.js"></script>
+</html>
