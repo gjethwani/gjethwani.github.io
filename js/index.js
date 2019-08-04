@@ -23,7 +23,11 @@ function showSection(sectionId) {
   for (var i = 0; i < navItems.length; i++) {
     document.getElementById(navItems[i].id + '-info').style.display = 'none';
   }
-  document.getElementById(sectionId + '-info').style.display = 'table';
+  var display = 'table';
+  if (sectionId === 'work') {
+    display = 'flex';
+  }
+  document.getElementById(sectionId + '-info').style.display = display;
 }
 
 function changeNavSelection(selectedElementId) {

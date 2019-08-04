@@ -17,6 +17,7 @@
   </head>
 
   <body>
+
     <div id='nav-bar'>
       <div id='home' class='nav-item nav-left-border selected-nav-item' onclick='return changeNavSelection("home");'>
         <p class='nav-text'>Home</p>
@@ -34,15 +35,68 @@
         <p class='nav-text'>Contact</p>
       </div>
     </div>
+    
     <div id='home-info'>
       <img id='profile-pic' src='profile-pic.gif' alt='Gautam Jethwani'>
       <h1 id='name' class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>Gautam Jethwani</h1>
-      <p id='description' class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>Software Developer</p>
+      <span id='description' class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>Engineer.</span>
     </div>
-    <div id='about-info' style='display: none'>
+
+    <div id='about-info' class='info-section' style='display: none'>
+      <!-- <div>
+        <img src='linkedin-profile-pic.jpg' />
+      </div> -->
+      <div>
+        <p>
+          Hello! I'm Gautam Jethwani and I'm from Kuala Lumpur, Malaysia.
+          I'm a senior at the University of Southern California studying Computer Science with a focus on full stack web development.
+          I'm passionate about solving everyday problems with technology. When I'm not coding, I'm either rock climbing or discussing global political landscapes.
+        </p>
+        <p>
+          I've worked in Los Angeles, Singapore and Kuala Lumpur and I enjoy being an active member in the USC community.
+          <ul>
+            <li>I was on the executive board for <a href='https://scopeusc.com' target='blank'>Scope</a>, USC's premier software engineering club, responsible for logistics and fostering the club's community</li>
+            <li>I was the Director of Programming and Director of Events for <a href='https://viterbimakers.usc.edu/' target='blank'>Makers at USC</a>, the sole IoT club on campus and am currently a project manager in the club</li>
+            <li>I'm on the <a href='https://www.facebook.com/SC.Climbing.Team/' target='blank'>USC climbing team</a> and have represented USC in competitions around California</li>
+          </ul>
+        </p>
+      </div>
     </div>
+
     <div id='work-info' style='display: none'>
+      <div class='work-info-container info-section'>
+        <img src='grab-logo.png' class='company-logo'/>
+        <div>
+          <h3 class='company-name'>Grab</h3>
+          <p class='work-description'>
+            I've worked at Grab twice. During my first tenure there, I was a software engineering intern on the 
+            <a href='https://www.techinasia.com/talk/grab-experimentation-platform' target='blank'>Product Insights 
+            and Experimentation team</a>. This team was developed a platform that let any team at Grab conduct A/B testing 
+            on any of their markets for any new features, providing data about the experiment after it was conducted. I developed 
+            a feature for the platform that allowed users to use Javascript to determine variable values rather than using static 
+            values.
+            <br /><br />
+            The second time I worked there, I was a software engineering intern on the Transport Core team. I worked on a key
+            service that managed operational configurations for the app. Previously, users could only interact with the service through
+            a Slackbot, but I helped build a portal for the service that provided an intuitive UI.
+          </p>
+        </div>
+      </div>
+
+      <div class='work-info-container info-section'>
+        <img src='wrench-logo.png' class='company-logo'/>
+        <div>
+          <h3 class='company-name'>WRENCH Project</h3>
+          <p class='work-description'>
+            I'm currently a student worker at <a href='https://wrench-project.org/'>WRENCH project</a>, a Workflow Management System 
+            Simulation Workbench. The Workbench spits out data in a messy JSON format so my responsibility was to develop a dashboard
+            using D3.js that could take this JSON data and generate some readable graphs from it. The code for the dashboard can be found
+            <a href='https://github.com/wrench-project/wrench/tree/master/tools/wrench/dashboard' target='blank'>here</a>.
+          </p>
+        </div>
+      </div>
     </div>
+
     <div id='projects-info' style='display: none'>
     </div>
     <div id='contact-info' class='info-container' style='display: none' >
@@ -82,4 +136,5 @@
   </body>
   <script src="js/index.js"></script>
   <script src="js/background.js"></script>
+  <script src="js/retype.js"></script>
 </html>
