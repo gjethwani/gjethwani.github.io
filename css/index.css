@@ -262,7 +262,7 @@ a {
     width: 40%;
     margin-top: 30px;
   }
-  .work-info-container {
+  .work-project-info-container {
     flex-direction: column;
   }
   .company-logo {
@@ -283,7 +283,7 @@ a {
 }
 
 @media only screen and (max-width: 600px) { /* Targets the desktop view */
-  .work-info-container {
+  .work-project-info-container {
     flex-direction: column;
   }
   .company-logo {
