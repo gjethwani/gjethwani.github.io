@@ -184,6 +184,7 @@ a {
   border-radius: 1rem;
   margin: auto;
   padding: 2rem;
+  height: auto;
 }
 
 .company-logo {
