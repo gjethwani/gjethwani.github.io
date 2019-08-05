@@ -193,7 +193,7 @@ a {
   flex: 1;
 }
 
-.work-info-container {
+.work-project-info-container {
   display: flex;
   align-items: center;
   margin-top: 40px;
@@ -205,6 +205,34 @@ a {
 
 .work-description {
   font-size: 13px;
+}
+
+.project-name {
+  display: inline-block;
+}
+
+.project-gif {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.two-gif-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.two-gif-div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.two-gif-image {
+  width: 100%;
+}
+
+.project-description-container {
+  width: 46%;
 }
 
 @keyframes spin {

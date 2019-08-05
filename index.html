@@ -64,7 +64,7 @@
     </div>
 
     <div id='work-info' style='display: none'>
-      <div class='work-info-container info-section'>
+      <div class='work-project-info-container info-section'>
         <img src='grab-logo.png' class='company-logo'/>
         <div>
           <h3 class='company-name'>Grab</h3>
@@ -83,7 +83,7 @@
         </div>
       </div>
 
-      <div class='work-info-container info-section'>
+      <div class='work-project-info-container info-section'>
         <img src='wrench-logo.png' class='company-logo'/>
         <div>
           <h3 class='company-name'>WRENCH Project</h3>
@@ -96,7 +96,7 @@
         </div>
       </div>
 
-      <div class='work-info-container info-section'>
+      <div class='work-project-info-container info-section'>
         <img src='viterbi-logo.jpg' class='company-logo'/>
         <div>
           <h3 class='company-name'>USC Viterbi School of Engineering</h3>
@@ -108,7 +108,7 @@
         </div>
       </div>
 
-      <div class='work-info-container info-section'>
+      <div class='work-project-info-container info-section'>
         <img src='servishero-logo.jpeg' class='company-logo'/>
         <div>
           <h3 class='company-name'>ServisHero</h3>
@@ -123,7 +123,45 @@
     </div>
 
     <div id='projects-info' style='display: none'>
+      <div class='info-section work-project-info-container'>
+        <img src='trello-updater demo.gif' class='project-gif'>
+        <div>
+            <h3 class='project-name'>trello-updater</h3>
+            <p class='work-description'>
+              While writing some code, I got sick and tired of 'TODO' comments that I could not keep track of. I thought Trello would be a good solution
+              but I did not want to keep switching between my IDE and Trello. The result: <a href='https://atom.io/packages/trello-updater' target='blank'>trello-updater</a>. 
+              trello-updater is a package that I developed for the popular IDE Atom that essentially is an interface for the Trello API. If you follow a certain
+              format for your code comment where you dictate what the board name, list name and description of the Trello card will be, you can simply highlight
+              the comment and, with the click of a button, send the card to Trello without so much as opening a browser. The card will be there complete with line
+              number.
+            </p>
+        </div>  
+      </div>
+
+      <div class='info-section work-project-info-container'>
+        <div class='two-gif-container'>
+          <div class='two-gif-div'>
+            <img src='SongQ Guest Demo.gif' class='two-gif-image'>
+          </div>
+          <div class='two-gif-div'>
+            <img src='SongQ Host Demo.gif' class='two-gif-image'>
+          </div>
+        </div>
+        <div class='project-description-container'>
+            <h3>SongQ</h3>
+            <p class='work-description'>
+              SongQ is a wep application I built that makes requesting music at any event much easier. A host of an event can go to www.songq.io and create a playlist
+              on the platform that links to any Spotify playlist they have the right to edit. There is also a 4 digit alphanumeric code attached to each playlist that 
+              hosts can pass onto their guests. Guests can then use this code to request songs. They can search for any track that's on Spotify and request it with a 
+              single click. The host can then choose to accept or deny these requests and upon acceptance, the track is added to the Spotify playlist. The above gif
+              shows songs being requested and the one below it shows songs being accepted and inserted into the playlist. The code for the API can be found <a href='https://github.com/gjethwani/SongQ' target='blank'>here</a>
+              and the code for the UI can be found <a href='https://github.com/gjethwani/SongQ-UI' target='blank'>here</a>
+            </p>
+        </div>  
+      </div>
     </div>
+
+
     <div id='contact-info' class='info-container' style='display: none' >
       <!-- <div id='contact-container' class='info-elements'> -->
         <h3>Shoot me a message:</h3>
