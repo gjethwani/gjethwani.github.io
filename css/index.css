@@ -4,10 +4,10 @@ html {
   flex-direction: column;
 }
 
-body {
+/* body {
   display: flex;
   flex-direction: column;
-}
+} */
 
 p, h1, h3, label, span, ul, a {
   font-family: 'Raleway', "Trebuchet MS", Helvetica, sans-serif;
@@ -34,7 +34,7 @@ a {
   margin-left: 7.5%;
   display: inline-block;
   margin-top: 2.5%;
-  height: 7.5%;
+  /* height: 7.5%; */
 }
 
 .nav-item {
