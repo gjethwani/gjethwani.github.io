@@ -356,7 +356,6 @@ a {
 @media only screen and (min-width: 480px) and (max-width: 600px) { /* Targets tablets in portrait mode and up */
   #home-info {
     width: 40%;
-    margin-top: 30px;
   }
   .work-project-info-container {
     flex-direction: column;
@@ -370,9 +369,6 @@ a {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) { /* Targets tablets in landscape mode and up */
-  #home-info {
-    margin-top: 20px;
-  }
   #about-info {
     margin-top: 40px;
   }

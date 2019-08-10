@@ -3,12 +3,31 @@ let menuVisible = false;
 function menuClick() {
   menuVisible = !menuVisible;
   let button = document.getElementById('responsive-nav-button');
+  let homeInfo = document.getElementById('home-info');
   if  (menuVisible) {
     button.classList.remove('closedMenu');
     button.classList.add('openMenu');
+    let pos = 0;
+    setInterval(function() {
+      if (pos === 300) {
+        return;
+      } else {
+        pos += 5; 
+        homeInfo.style.top = pos + 'px'; 
+      }
+    }, 5)
   } else {
     button.classList.add('closedMenu');
     button.classList.remove('openMenu');
+    let pos = 300;
+    setInterval(function() {
+      if (pos === 0) {
+        return;
+      } else {
+        pos -= 5; 
+        homeInfo.style.top = pos + 'px'; 
+      }
+    }, 5)
   }
 }
 
@@ -41,7 +60,7 @@ function showSection(sectionId) {
     document.getElementById(navItems[i].id + '-info').style.display = 'none';
   }
   var display = 'table';
-  if (sectionId === 'home' || sectionId === 'work' || sectionId === 'about' || sectionId === 'contact') {
+  if (sectionId === 'work' || sectionId === 'about' || sectionId === 'contact') {
     display = 'flex';
   }
   if (sectionId === 'projects' || sectionId === 'resume') {
