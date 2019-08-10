@@ -55,6 +55,7 @@ window.onload = function() {
 }
 
 function showSection(sectionId) {
+  window.location.hash = sectionId;
   var navItems = document.getElementById('nav-bar').children;
   for (var i = 0; i < navItems.length; i++) {
     document.getElementById(navItems[i].id + '-info').style.display = 'none';
@@ -80,7 +81,6 @@ function changeNavSelection(selectedElementId) {
     navItems[i].classList.remove('selected-nav-item');
   }
   selectedElement.classList.add('selected-nav-item');
-  window.location.hash = selectedElementId;
   showSection(selectedElementId);
 }
 
