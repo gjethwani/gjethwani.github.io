@@ -92,12 +92,19 @@ a {
   display: block;
   text-align: center;
   margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 #profile-pic {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.info-container {
+  height: 100vh;
 }
 
 #name {
@@ -159,6 +166,7 @@ a {
   color: white;
   margin-top: 10px;
   cursor: pointer;
+  width: 20%;
 }
 
 .errors {
@@ -205,6 +213,12 @@ a {
   margin-top: 40px;
 }
 
+.project-info-container {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
 .company-name {
   font-weight: bold;
 }
@@ -218,7 +232,23 @@ a {
 }
 
 .project-gif {
-  flex: 1;
+  width: 100%;
+}
+
+.project-gif-container {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.project-text-container {
+  width: 100%;
+}
+
+.sleepmask-image {
+  width: 100%;
+}
+
+.sleepmask-image-container {
   margin-right: 20px;
 }
 
@@ -226,6 +256,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+  flex: 1;
 }
 
 .two-gif-div {
@@ -238,7 +269,8 @@ a {
 }
 
 .project-description-container {
-  width: 46%;
+  flex: 1;
+  width: 50%;
 }
 
 @keyframes spin {
@@ -294,5 +326,28 @@ a {
   }
   .company-logo {
     margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .project-info-container {
+    flex-direction: column;
+  }
+  .project-description-container {
+    width: 100%;
+  }
+  .project-gif {
+    margin-bottom: 20px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .two-gif-container {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .sleepmask-image-container {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
   }
 }

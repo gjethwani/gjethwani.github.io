@@ -24,8 +24,11 @@ function showSection(sectionId) {
     document.getElementById(navItems[i].id + '-info').style.display = 'none';
   }
   var display = 'table';
-  if (sectionId === 'work') {
+  if (sectionId === 'work' || sectionId === 'about') {
     display = 'flex';
+  }
+  if (sectionId === 'projects') {
+    display = 'block';
   }
   document.getElementById(sectionId + '-info').style.display = display;
 }

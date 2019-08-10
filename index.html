@@ -38,29 +38,30 @@
     </div>
     
     <div id='home-info'>
+      <div>
       <img id='profile-pic' src='profile-pic.gif' alt='Gautam Jethwani'>
       <h1 id='name' class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>Gautam Jethwani</h1>
       <span id='description' class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>Engineer.</span>
     </div>
+    </div>
 
-    <div id='about-info' class='info-section' style='display: none'>
-      <!-- <div>
-        <img src='linkedin-profile-pic.jpg' />
-      </div> -->
-      <div>
-        <p>
-          Hello! I'm Gautam Jethwani and I'm from Kuala Lumpur, Malaysia.
-          I'm a senior at the University of Southern California studying Computer Science with a focus on full stack web development.
-          I'm passionate about solving everyday problems with technology. When I'm not coding, I'm either rock climbing or discussing global political landscapes.
-        </p>
-        <p>
-          I've worked in Los Angeles, Singapore and Kuala Lumpur and I enjoy being an active member in the USC community.
-          <ul>
-            <li>I was on the executive board for <a href='https://scopeusc.com' target='blank'>Scope</a>, USC's premier software engineering club, responsible for logistics and fostering the club's community</li>
-            <li>I was the Director of Programming and Director of Events for <a href='https://viterbimakers.usc.edu/' target='blank'>Makers at USC</a>, the sole IoT club on campus and am currently a project manager in the club</li>
-            <li>I'm on the <a href='https://www.facebook.com/SC.Climbing.Team/' target='blank'>USC climbing team</a> and have represented USC in competitions around California</li>
-          </ul>
-        </p>
+    <div id='about-info' class='info-container' style='display: none'>
+      <div class='info-section'>
+        <div>
+          <p>
+            Hello! I'm Gautam Jethwani and I'm from Kuala Lumpur, Malaysia.
+            I'm a senior at the University of Southern California studying Computer Science with a focus on full stack web development.
+            I'm passionate about solving everyday problems with technology. When I'm not coding, I'm either rock climbing or discussing global political landscapes.
+          </p>
+          <p>
+            I've worked in Los Angeles, Singapore and Kuala Lumpur and I enjoy being an active member in the USC community.
+            <ul>
+              <li>I was on the executive board for <a href='https://scopeusc.com' target='blank'>Scope</a>, USC's premier software engineering club, responsible for logistics and fostering the club's community</li>
+              <li>I was the Director of Programming and Director of Events for <a href='https://viterbimakers.usc.edu/' target='blank'>Makers at USC</a>, the sole IoT club on campus and am currently a project manager in the club</li>
+              <li>I'm on the <a href='https://www.facebook.com/SC.Climbing.Team/' target='blank'>USC climbing team</a> and have represented USC in competitions around California</li>
+            </ul>
+          </p>
+        </div>
       </div>
     </div>
 
@@ -124,9 +125,9 @@
     </div>
 
     <div id='projects-info' style='display: none'>
-      <div class='info-section work-project-info-container'>
-        <img src='trello-updater demo.gif' class='project-gif'>
-        <div>
+      <div class='info-section project-info-container'>
+        <div class='project-gif-container'><img src='trello-updater demo.gif' class='project-gif'></div>
+        <div class='project-text-container'>
             <h3 class='project-name'>trello-updater</h3>
             <p class='work-description'>
               While writing some code, I got sick and tired of 'TODO' comments that I could not keep track of. I thought Trello would be a good solution
@@ -139,7 +140,7 @@
         </div>  
       </div>
 
-      <div class='info-section work-project-info-container'>
+      <div class='info-section project-info-container'>
         <div class='two-gif-container'>
           <div class='two-gif-div'>
             <img src='SongQ Guest Demo.gif' class='two-gif-image'>
@@ -157,6 +158,20 @@
               single click. The host can then choose to accept or deny these requests and upon acceptance, the track is added to the Spotify playlist. The above gif
               shows songs being requested and the one below it shows songs being accepted and inserted into the playlist. The code for the API can be found <a href='https://github.com/gjethwani/SongQ' target='blank'>here</a>
               and the code for the UI can be found <a href='https://github.com/gjethwani/SongQ-UI' target='blank'>here</a>
+            </p>
+        </div>  
+      </div>
+
+      <div class='info-section project-info-container'>
+        <div class='sleepmask-image-container'>
+          <img src='sleepmask-image.jpg' class='sleepmask-image'>
+        </div>
+        <div>
+            <h3 class='project-name'>Smart Sleepmask</h3>
+            <p class='work-description'>
+              I was part of a team that built a sleepmask that could detect your motion and acted as a smart alarm clock. You could set a time and it would see when you 
+              were in your lightest point of sleep within half an hour of that time using an accelerometer. It would then use LEDs to give you a peacful rising experience.
+              You can see the project details <a href='https://www.hackster.io/tikitown/smart-sleep-mask-99e42a'>here</a>.
             </p>
         </div>  
       </div>
@@ -183,7 +198,7 @@
           <input type='textarea' placeholder='Hi!' name='message' id='message-field'>
           <p id='message-errors' class='errors'>hidden</p>
 
-          <input type='button' id='contact-button' style='width: 10%;' onclick='return sendContactForm();' value='Send'>
+          <input type='button' id='contact-button' style='width:20%;' onclick='return sendContactForm();' value='Send'>
           <div class='loader' id='loader' style='display: none;'></div>
           <p class='sent' id='sent'>Sent!</p>
           <p class='errors' id='somethingWentWrong'>Something went wrong, please try again!</p>
