@@ -39,7 +39,27 @@
         <p class='nav-text'>Contact</p>
       </div>
     </div>
-    
+
+    <nav class="navbar navbar-inverse" id='responsive-nav-bar'>
+        <div class="container-fluid">
+          <div class="navbar-header nav-button-container">
+            <button type="button" class="navbar-toggle nav-button" data-toggle="collapse" data-target="#myNavbar">
+              <img src='menu-icon.png' id='menu-icon'/>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active responsive-nav-item" onclick='return showSection("home");'>Home</li>
+              <li class="responsive-nav-item" onclick='return showSection("about");'>About</li>
+              <li class="responsive-nav-item" onclick='return showSection("work");'>Work</li> 
+              <li class="responsive-nav-item" onclick='return showSection("projects");'>Projects</li>
+              <li class="responsive-nav-item" onclick='return showSection("resume");'>Resume</li>
+              <li class="responsive-nav-item" onclick='return showSection("contact");'>Contact</li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <div id='home-info'>
       <div>
       <img id='profile-pic' src='profile-pic.gif' alt='Gautam Jethwani'>

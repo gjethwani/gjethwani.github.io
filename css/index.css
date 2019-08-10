@@ -279,6 +279,36 @@ a {
   height: 80vh;
 }
 
+#menu-icon {
+  width: 10%;
+}
+
+.nav-button {
+  background-color: #FF5733;
+  border: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-top: 20px;
+}
+
+.nav-button-container {
+  width: 100%;
+}
+
+.responsive-nav-item {
+  border: 2px solid #FF5733;
+  text-align: center;
+  font-size: 12px;
+  padding: 0.5rem;
+}
+
+#responsive-nav-bar {
+  display: none;
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -293,11 +323,17 @@ a {
   #home-info {
     width: 65%;
   }
+  #menu-icon {
+    width: 10%;
+  }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 480px) { /* Will target mobile devices in landscape mode and up */
   #home-info {
     width: 50%;
+  }
+  #menu-icon {
+    width: 10%;
   }
 }
 
@@ -312,11 +348,17 @@ a {
   .company-logo {
     margin-bottom: 40px;
   }
+  #menu-icon {
+    width: 5%;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) { /* Targets tablets in landscape mode and up */
   #home-info {
     margin-top: 20px;
+  }
+  #about-info {
+    margin-top: 40px;
   }
 }
 
@@ -338,6 +380,15 @@ a {
   }
   .social-media {
     width: 15%;
+  }
+  #nav-bar {
+    display: none;
+  }
+  #responsive-nav-bar {
+    display: block;
+  }
+  #contact-info {
+    margin-top: 40px;
   }
 }
 
