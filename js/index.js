@@ -1,3 +1,17 @@
+let menuVisible = false;
+
+function menuClick() {
+  menuVisible = !menuVisible;
+  let button = document.getElementById('responsive-nav-button');
+  if  (menuVisible) {
+    button.classList.remove('closedMenu');
+    button.classList.add('openMenu');
+  } else {
+    button.classList.add('closedMenu');
+    button.classList.remove('openMenu');
+  }
+}
+
 function fadeIn(element, peakOpacity) {
     var op = 0.1;  // initial opacity
     element.style.display = 'block';
