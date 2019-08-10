@@ -15,6 +15,9 @@ window.onload = function() {
   var background = document.getElementById('stars');
   var container = document.getElementById('container');
   fadeIn(background, 1);
+  if (window.location.hash) {
+    changeNavSelection(window.location.hash.substr(1));
+  }
   setTimeout(fadeIn(container, 1), 10000);
 }
 
@@ -24,10 +27,10 @@ function showSection(sectionId) {
     document.getElementById(navItems[i].id + '-info').style.display = 'none';
   }
   var display = 'table';
-  if (sectionId === 'work' || sectionId === 'about') {
+  if (sectionId === 'home' || sectionId === 'work' || sectionId === 'about' || sectionId === 'contact') {
     display = 'flex';
   }
-  if (sectionId === 'projects') {
+  if (sectionId === 'projects' || sectionId === 'resume') {
     display = 'block';
   }
   document.getElementById(sectionId + '-info').style.display = display;
@@ -35,11 +38,16 @@ function showSection(sectionId) {
 
 function changeNavSelection(selectedElementId) {
   var selectedElement = document.getElementById(selectedElementId);
+  if (!selectedElement) {
+    selectedElement = document.getElementById('home')
+    selectedElementId = 'home'
+  }
   var navItems = document.getElementById('nav-bar').children;
   for (var i = 0; i < navItems.length; i++) {
     navItems[i].classList.remove('selected-nav-item');
   }
   selectedElement.classList.add('selected-nav-item');
+  window.location.hash = selectedElementId;
   showSection(selectedElementId);
 }
 
