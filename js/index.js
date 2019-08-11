@@ -5,8 +5,6 @@ function menuClick() {
   let button = document.getElementById('responsive-nav-button');
   let homeInfo = document.getElementById('home-info');
   if  (menuVisible) {
-    button.classList.remove('closedMenu');
-    button.classList.add('openMenu');
     let pos = 0;
     setInterval(function() {
       if (pos === 300) {
@@ -56,6 +54,7 @@ window.onload = function() {
 
 function showSection(sectionId) {
   window.location.hash = sectionId;
+  window.scrollTo(0,0);
   var navItems = document.getElementById('nav-bar').children;
   for (var i = 0; i < navItems.length; i++) {
     document.getElementById(navItems[i].id + '-info').style.display = 'none';
