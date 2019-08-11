@@ -3,29 +3,12 @@ let menuVisible = false;
 function menuClick() {
   menuVisible = !menuVisible;
   let button = document.getElementById('responsive-nav-button');
-  let homeInfo = document.getElementById('home-info');
   if  (menuVisible) {
-    let pos = 0;
-    setInterval(function() {
-      if (pos === 300) {
-        return;
-      } else {
-        pos += 5; 
-        homeInfo.style.top = pos + 'px'; 
-      }
-    }, 5)
+    button.classList.remove('closedMenu');
+    button.classList.add('openMenu');
   } else {
     button.classList.add('closedMenu');
     button.classList.remove('openMenu');
-    let pos = 300;
-    setInterval(function() {
-      if (pos === 0) {
-        return;
-      } else {
-        pos -= 5; 
-        homeInfo.style.top = pos + 'px'; 
-      }
-    }, 5)
   }
 }
 
@@ -42,6 +25,18 @@ function fadeIn(element, peakOpacity) {
     }, 10);
 }
 
+function changeBodyHeight() {
+  const homeInfo = document.getElementById('home-info');
+  const contactInfo = document.getElementById('contact-info');
+  const aboutInfo = document.getElementById('about-info');
+  const body = document.getElementsByTagName('body')[0];
+  if (homeInfo.style.display !== 'none' || contactInfo.style.display !== 'none' || aboutInfo.style.display !== 'none') {
+    body.style.height = '100%';
+  } else {
+    body.style.height = '';
+  }
+}
+
 window.onload = function() {
   var background = document.getElementById('stars');
   var container = document.getElementById('container');
@@ -49,6 +44,7 @@ window.onload = function() {
   if (window.location.hash) {
     changeNavSelection(window.location.hash.substr(1));
   }
+  changeBodyHeight();
   setTimeout(fadeIn(container, 1), 10000);
 }
 
@@ -60,13 +56,14 @@ function showSection(sectionId) {
     document.getElementById(navItems[i].id + '-info').style.display = 'none';
   }
   var display = 'table';
-  if (sectionId === 'work' || sectionId === 'about' || sectionId === 'contact') {
+  if (sectionId === 'home' || sectionId === 'work' || sectionId === 'about' || sectionId === 'contact') {
     display = 'flex';
   }
   if (sectionId === 'projects' || sectionId === 'resume') {
     display = 'block';
   }
   document.getElementById(sectionId + '-info').style.display = display;
+  changeBodyHeight();
 }
 
 function changeNavSelection(selectedElementId) {
