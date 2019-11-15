@@ -11,7 +11,6 @@
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/cfe5f316/dist/aframe-extras.js"></script>
 </head>
-
 <body>
     <a-scene embedded arjs='debugUIEnabled: false;'>
         <!-- create your content here. just a box for now -->
@@ -23,10 +22,23 @@
         </a-assets>
         <a-entity id="walker" gltf-model="#cesium-man" position="0 0 -5" scale="0.5 0.5 0.5" animation-mixer>
         </a-entity>
+        <a-camera ar-raycaster raycaster cursor="fuse:false"> </a-camera>
+        <a-ring id="cursor" radius-inner="0.1" radius-outer="0.2"  color="teal" position="0 -0.8 -5" rotation="-90 0 0">
+        </a-ring>
         <!-- define a camera which will move according to the marker position -->
         <!-- <a-marker-camera preset='chrome'></a-marker-camera> -->
         <a-marker-camera type='pattern' url='https://gautamjethwani.com/assets/gj-marker.patt'></a-marker-camera> -->
       </a-scene>
 </body>
-
+<script type="text/javascript">
+    function onSceneLoaded() {
+      const raycaster = document.querySelector('[ar-raycaster]');
+      const cursor = document.querySelector('#cursor');
+      raycaster.addEventListener('raycaster-intersection', (event) => {
+        cursor.setAttribute('position', event.detail.intersections[0].point);
+      });
+    }
+    const scene = document.querySelector('a-scene');
+    scene.addEventListener('loaded', onSceneLoaded);
+</script>
 </html>
