@@ -15,15 +15,19 @@
     <a-scene embedded arjs='debugUIEnabled: false;'>
         <a-assets>
             <!-- <a-asset-item id="cesium-man" src="https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/29355d23/2.0/CesiumMan/glTF-Binary/CesiumMan.glb" crossOrigin="anonymous"></a-asset-item> -->
-            <a-asset-item id="whale" src="assets/whale/scene.gltf" crossOrigin="anonymous"></a-asset-item>
+            <!-- <a-asset-item id="whale" src="assets/whale/scene.gltf" crossOrigin="anonymous"></a-asset-item> -->
         </a-assets>
         <!-- create your content here. just a box for now -->
         <!-- <a-box position='0 0.5 0' material='opacity: 0.5;'>
             <a-entity position="1 0 0" scale="3 3 3" text="value: HELLO;color:black"></a-entity>
         </a-box> -->
         <a-marker type='pattern' url='https://gautamjethwani.com/assets/gj-marker.patt'>
-            <a-entity id="whale" gltf-model="#whale" position="0 -0.5 0" scale="0.5 0.5 0.5" animation-mixer>
-            </a-entity>
+            <!-- <a-entity id="whale" gltf-model="#whale" position="0 -0.5 0" scale="0.5 0.5 0.5" animation-mixer>
+            </a-entity> -->
+            <a-box position='0 0.5 0' material='opacity: 0.5;'>
+                    <a-entity position="0.5 0 0" rotation="270 0 0" scale="2 2 2"  text="value: Thank you for;color:black"></a-entity>
+                    <a-entity position="0.5 0 0.1" rotation="270 0 0" scale="2 2 2"  text="value: viewing my resume;color:black"></a-entity>
+            </a-box>
         </a-marker> 
         <a-entity camera></a-entity>
 
