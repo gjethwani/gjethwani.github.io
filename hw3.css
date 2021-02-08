@@ -1,0 +1,73 @@
+.trojan-cafe-header {
+    margin-bottom: 8px;
+    font-size: 33px;
+    margin-left: 316px;
+}
+
+.nav-bar {
+    background-color: #faebd6;
+    padding-left: 60px;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 28px;
+    margin-left: -8px;
+    width: 790px;
+}
+
+.nav-bar-text {
+    font-family: Arial;
+}
+
+.restaurant-img {
+    margin-left: 60px;
+    width: 708px;
+    display: block;
+    margin-bottom: 23px;
+}
+
+.explore-delicious-cuisines {
+    text-align: center;
+    width: 100%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 21px;
+    margin-left: 292px;
+    text-decoration: underline;
+}
+
+.cuisine-container {
+    margin-top: 25px;
+    overflow: hidden;
+    margin-bottom: 71px;
+}
+
+.italian-cuisine-img {
+    width: 326px;
+    margin-left: 81px;
+    display: inline-block;
+    height: 246px;
+}
+
+.italian-cuisine-text-container {
+    display: inline-block;
+    margin-left: 70px;
+    width: 280px;
+    vertical-align: 110px;
+}
+
+.cuisine-text {
+    margin: 0px;
+}
+
+.indian-cuisine-img {
+    width: 326px;
+    display: inline-block;
+    margin-left: 85px;
+    height: 245px;
+}
+
+.indian-cuisine-text-container {
+    width: 248px;
+    display: inline-block;
+    margin-left: 81px;
+    vertical-align: 123px;
+}
