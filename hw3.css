@@ -1,7 +1,15 @@
+.header-container {
+    display: flex;
+    overflow: hidden;
+    width: 711px;
+}
+
 .trojan-cafe-header {
-    margin-bottom: 8px;
-    font-size: 33px;
-    margin-left: 316px;
+    margin-bottom: 14px;
+    font-size: 30px;
+    text-align: center;
+    width: 711px;
+    color: #260071;
 }
 
 .nav-bar {
@@ -16,6 +24,9 @@
 
 .nav-bar-text {
     font-family: Arial;
+    color: #3948D9;
+    margin-right: 10px;
+    text-decoration: none;
 }
 
 .restaurant-img {
@@ -23,21 +34,50 @@
     width: 708px;
     display: block;
     margin-bottom: 23px;
+    height: 398px;
+    background-image: url("restaurant.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 708px 530px;
+    background-position: 68px 3px;
+}
+
+.enjoy-scenic-view {
+    color: #F9F7D0;
+    font-size: 40px;
+    position: relative;
+    top: 133px;
+    left: 181px;
+}
+
+.book-reservation {
+    padding: 7px;
+    position: relative;
+    top: 120px;
+    left: 450px;
+    outline: 1px solid beige;
+}
+
+.delicious-cuisines-container {
+    display: flex;
+    width: 711px;
+    margin-left: 60px;
 }
 
 .explore-delicious-cuisines {
     text-align: center;
-    width: 100%;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 21px;
-    margin-left: 292px;
+    width: 711px;
     text-decoration: underline;
+    color: #7F01A3
 }
 
 .cuisine-container {
     margin-top: 25px;
     overflow: hidden;
     margin-bottom: 71px;
+    display: flex;
 }
 
 .italian-cuisine-img {
@@ -45,13 +85,16 @@
     margin-left: 81px;
     display: inline-block;
     height: 246px;
+    border: 10px solid #FEE5E1;
 }
 
 .italian-cuisine-text-container {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     margin-left: 70px;
     width: 280px;
-    vertical-align: 110px;
+    margin-top: 110px;
 }
 
 .cuisine-text {
@@ -63,11 +106,24 @@
     display: inline-block;
     margin-left: 85px;
     height: 245px;
+    border: 10px solid #ADD8E8;
 }
 
 .indian-cuisine-text-container {
     width: 248px;
-    display: inline-block;
     margin-left: 81px;
-    vertical-align: 123px;
+    margin-top: 123px;
+}
+
+.title {
+    color: #0E48CD;
+    font-weight: bold;
+}
+
+.cuisine-text-italian {
+    width: 280px;
+}
+
+.cuisine-text-indian {
+    width: 248px;
 }

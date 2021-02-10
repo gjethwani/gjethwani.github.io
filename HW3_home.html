@@ -8,43 +8,50 @@
     <title>Home | Menu</title>
 </head>
 <body>
-    <h1 class="trojan-cafe-header">Trojan Café</h1>
-    <div class="nav-bar">
-        <a class="nav-bar-text">Home</a>
-        <a class="nav-bar-text">Italian</a>
-        <a class="nav-bar-text">Indian</a>
-        <a class="nav-bar-text">Japanese</a>
-        <a class="nav-bar-text">Desserts</a>
-        <a class="nav-bar-text">About</a>
-        <a class="nav-bar-text">Contact</a>
+    <div class="header-container" id="header">
+        <h1 class="trojan-cafe-header">Trojan Café</h1>
     </div>
-    <img src="restaurant.jpeg" class="restaurant-img"/>
-    <a class="explore-delicious-cuisines">Explore Our Delicious Cuisines</a>
-    <div class="cuisine-container">
+    <div class="nav-bar">
+        <a class="nav-bar-text" href="#header">Home</a>
+        <a class="nav-bar-text" href="#italian">Italian</a>
+        <a class="nav-bar-text" href="#indian">Indian</a>
+        <a class="nav-bar-text" href="#japanese">Japanese</a>
+        <a class="nav-bar-text" href="#desserts">Desserts</a>
+        <a class="nav-bar-text" href="welcome.html" target="_blank">About</a>
+        <a class="nav-bar-text" href="welcome.html" target="_blank">Contact</a>
+    </div>
+    <div class="restaurant-img">
+        <h2 class="enjoy-scenic-view">Enjoy the Scenic View!!</h2>
+        <div><button class="book-reservation">Book Your Reservation</button></div>
+    </div>
+    <div class="delicious-cuisines-container">
+        <a class="explore-delicious-cuisines">Explore Our Delicious Cuisines</a>
+    </div>
+    <div class="cuisine-container" id="italian">
         <img class="italian-cuisine-img" src="italian.jpeg"/>
         <div class="italian-cuisine-text-container">
-            <p class="cuisine-text">Italy's finest:</p>
-            <p class="cuisine-text">From our Lasagna to our Protein Penne, we have delicious options for every taste!</p>
+            <p class="cuisine-text title cuisine-text-italian">Italy's finest:</p>
+            <p class="cuisine-text cuisine-text-italian">From our Lasagna to our Protein Penne, we have delicious options for every taste!</p>
         </div>
     </div>
-    <div class="cuisine-container">
+    <div class="cuisine-container" id="indian">
         <div class="indian-cuisine-text-container">
-            <p class="cuisine-text">India's Flavours:</p>
-            <p class="cuisine-text">Our dishes are blended with masterful savory spices</p>
+            <p class="cuisine-text title cuisine-text-indian">India's Flavours:</p>
+            <p class="cuisine-text cuisine-text-indian">Our dishes are blended with masterful savory spices</p>
         </div>
         <img class="indian-cuisine-img" src="indian.jpeg"/>
     </div>
-    <div class="cuisine-container">
+    <div class="cuisine-container" id="japanese">
         <img class="italian-cuisine-img" src="japanese.jpg"/>
         <div class="italian-cuisine-text-container">
-            <p class="cuisine-text">Japanese Cuisine:</p>
-            <p class="cuisine-text">Delicious dining options from Sake to Sushi</p>
+            <p class="cuisine-text title cuisine-text-italian">Japanese Cuisine:</p>
+            <p class="cuisine-text cuisine-text-italian">Delicious dining options from Sake to Sushi</p>
         </div>
     </div>
-    <div class="cuisine-container">
+    <div class="cuisine-container" id="desserts">
         <div class="indian-cuisine-text-container">
-            <p class="cuisine-text">Desserts:</p>
-            <p class="cuisine-text">From Italian Tiramisu to Indian Gulab Jamun</p>
+            <p class="cuisine-text title">Desserts:</p>
+            <p class="cuisine-text cuisine-text-indian">From Italian Tiramisu to Indian Gulab Jamun</p>
         </div>
         <img class="indian-cuisine-img" src="desserts.jpg"/>
     </div>
