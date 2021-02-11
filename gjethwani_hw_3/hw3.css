@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .header-container {
     display: flex;
     overflow: hidden;
